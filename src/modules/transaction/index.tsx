@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Transaction, TransactionSummary } from "@/type/type";
 import TransactionTable from "./table";
 import styles from "./style.module.css";
@@ -13,11 +13,7 @@ const TransactionContainer: React.FC = () => {
         transactionList: [],
         totalBalance: 0,
     });
-    const [notes, setNotes] = useState<string>("");
     useEffect(() => {
-        console.log('tes ue nonSuccessTransaction ', nonSuccessTransaction)
-        console.log('tes ue transactionSummary ', transactionSummary)
-        console.log('tes ue isUploading ', isUploading)
         fetchTransactionIssues().then(setNonSuccessTransaction);
         fetchTransactionSummary().then((data) => {
             setTransactionSummary({
