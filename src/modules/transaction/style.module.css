@@ -1,0 +1,26 @@
+/* src/styles/Transaction.module.css */
+.container {
+  padding: 20px;
+}
+
+.upload {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.balance {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.notes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notes textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}

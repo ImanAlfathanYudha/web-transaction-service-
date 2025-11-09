@@ -1,0 +1,14 @@
+.emptyContainer {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.emptyText {
+  color: #666;
+  font-size: 15px;
+  font-family: system-ui, sans-serif;
+}
